@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    /* Create two equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 50%;
+      padding: 10px;
+      height: 300px; /* Should be removed. Only for demonstration */
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    </style>
+<body>
+
+<h1>guen eunbin</h1>
+
+ <body>
+    
+<p>각 나라의 랜드마크 </p>
+
+<p> 랜드마크(Landmark)란, '땅'을 뜻하는 영단어 Land와 '표시하다'
+     라는 뜻을 가진 영단어 Mark의 합성어로,
+      본래는 먼 곳에서도 잘 보이는 물체를 말하는 것이었다. </p>
+       
+<p>인간은 오래 전부터 산이나 바위, 커다란 나무 등 지형지물을 이정표로 삼아 그것이 보이는 곳에서
+     자신의 현재 위치를 파악하며 이동을 하였고, 
+     문명이 형성된 후로부터는 높게 솟은 형태의 탑 같은 건축물이나 동상 같은 조형물을 만들어 
+     그 역할을 대신하였다.
+     이외에도 랜드마크는 약속 장소나, 지리를 설명할 때 기준으로 삼는 수단으로 활용되고 있다.</p>
+
+<p>오늘날에는 랜드마크에 포함되는 범위가 더욱 넓어져 굳이 높이 솟은 건축물이나 조형물이 아니라도, 
+    널리 알려진 문화재나 광장, 공원, 분수대 같은 명소를 의미하기도 한다.
+</p>
+
+    <ul>
+        <li>나라</li>
+        <li>수도</li>
+        <li>랜드마크</li>
+      </ul>  
+      <table>
+        <tr>
+          <th>나라</th>
+          <th>수도</th>
+          <th>랜드마크</th>
+        </tr>
+        <tr>
+          <td>대한민국</td>
+          <td>서울</td>
+          <td>63빌딩</td>
+        </tr>
+        <tr>
+          <td>미국</td>
+          <td>워싱턴D.C</td>
+          <td>자유의 여신상</td>
+        </tr>
+        <tr>
+          <td>중국</td>
+          <td>배이징</td>
+          <td>자금성</td>
+        </tr>
+        <tr>
+          <td>일본</td>
+          <td>도쿄</td>
+          <td>도쿄타워</td>
+        </tr>
+        <tr>
+          <td>인도</td>
+          <td>뉴델리</td>
+          <td>타지마할</td>
+        </tr>
+        <tr>
+          <td>호주</td>
+          <td>캔버라</td>
+          <td>오페라 하우스</td>
+        </tr>
+      </table>
+
+      <h2>미국과 호주의 랜드마크</h2>
+
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2>자유의 여신상</h2>
+    <p>미국 뉴욕 리버티 섬에 세워진 93.5m의 키에 204t의 엄청난 크기와 무게를 자랑하는 여신상이다.<br>
+         미국, 아메리칸 드림의 상징이라 봐도 된다. 머리에는 7개의 대륙을 나타내는<br> 
+        뿔이 달린 왕관을 쓰고 있고 오른손은 횃불을 치켜들고 왼손으로는 독립선언서를 안고 있다.</p>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <h2>오페라 하우스</h2>
+    <p>호주 시드니에 있는 오페라 극장. 시드니를 상징하는 랜드마크로도 유명하다.<br>
+         시드니를 넘어 호주하면 가장 먼저 떠오르는 대표적인 건축물<br>
+         조개 껍데기 모양의 이색적인 외형이 특징으로, 2007년 유네스코 세계유산에 등재되었다.</p>
+  </div>
+</div>
+</body>
+</html>
