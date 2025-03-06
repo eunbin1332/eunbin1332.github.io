@@ -1,6 +1,7 @@
 # eunbin1332.github.io
 
 군 재대후 이번에 복학한 21학번 컴공과 권은빈입니다
-![Alt text](![image](https://github.com/user-attachments/assets/1e1cee75-6b75-4def-9d98-965b0946d18d)
+* *
+![Alt text](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-QT5Lj6ypLSPdDOIRN8ZA-_Rztzg0cweNhQ&s)
 )
 
