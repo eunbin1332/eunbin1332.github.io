@@ -27,14 +27,14 @@ This is an H2
 > >+List
 > > >code
 
-[DSU][id]
+[DSU][https://www.dongseo.ac.kr/]
 
 [id]: URL "DSU"
 
 // code
 Link: [(https://www.dongseo.ac.kr/)]
 
-[DSU]:[ https://google.com "Go google"](https://www.dongseo.ac.kr/)
+[DSU]:[https://www.dongseo.ac.kr/]
 
 
 
