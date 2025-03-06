@@ -27,7 +27,7 @@ This is an H2
 > >+List
 > > >code
 
-[DSU]
+[DSU][https://www.dongseo.ac.kr/]
 
 [id]: URL "[DSU](https://www.dongseo.ac.kr/)"
 
