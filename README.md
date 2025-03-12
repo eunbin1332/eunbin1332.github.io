@@ -1,6 +1,6 @@
 # eunbin1332.github.io
 
-[**homework2**](https://github.com/eunbin1332/eunbin1332.github.io/homework2.html)
+[**homework2**](https://github.com/eunbin1332/eunbin1332.github.io/homework  2-1.html)
 군 재대후 이번에 복학한 21학번 컴공과 권은빈입니다
 * * *
 This is an H1
