@@ -1,9 +1,9 @@
 # eunbin1332.github.io
 
-[**homework2**](https://eunbin1332.github.io/homework2-1.html)
+[**homework2-1**](https://eunbin1332.github.io/homework2-1.html)
 군 재대후 이번에 복학한 21학번 컴공과 권은빈입니다
 * * *
-This is<br> an H1
+This is an H1
 -----------------
 This is an H2
 -----------------
