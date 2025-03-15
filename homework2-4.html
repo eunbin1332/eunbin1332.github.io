@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  
+}
+</style>
+<html>
+<body>
+
+<h2>호주의 랜드마크</h2>
+
+<div class="row">
+  <div class="column">
+    <h2>오페라 하우스</h2>
+    <p><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQOZqi--y80EFwUdv4Zj4mY_2SzoO4tEG20QCNmZQYEcp3HewMBBvBpmJaUvkWDrw1sU94uf9CZ4oyqyyDFAGLVFNi0NW2NT8dKDnco" alt="Trulli" width="300" height="200">
+    호주 시드니에 있는 오페라 극장. 시드니를 상징하는 랜드마크로도 유명하다. 시드니를 넘어 호주하면 가장 먼저 떠오르는 대표적인 건축물.<br>
+    조개 껍데기 모양의 이색적인 외형이 특징으로, 2007년 유네스코 세계유산에 등재되었다.</p>
+  </div>
+  <div class="column">
+    <h2>상영일정</h2>
+    <table>
+  <tr>
+    <th>제목</th>
+    <th>날짜</th>
+  </tr>
+  <tr>
+    <td>라 트라비아타</td>
+    <td>2025.1.23~3.27</td>
+  </tr>
+  <tr>
+    <td>디즈니 인 콘서트</td>
+    <td>2025.3.12~3.15</td>
+  </tr>
+  <tr>
+    <td>디도 앤 아에나스</td>
+    <td>2025.3.13~3.29</td>
+  </tr>
+  <tr>
+    <td>글래디에이터 라이브 인 콘서트</td>
+    <td>2025.4.3~4.5</td>
+  </tr>
+
+</table>
+  </div>
+</div>
+
+</body>
+</html>
