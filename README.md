@@ -5,8 +5,6 @@
 [**homework2-3**](https://eunbin1332.github.io/homework2-3.html)<br>
 [**homework2-4**](https://eunbin1332.github.io/homework2-4.html)<br>
 
-[**homework3-1**](https://eunbin1332.github.io/homework3-1.html)<br>
-[**homework3-2**](https://eunbin1332.github.io/homework3-2.html)<br>
 군 재대후 이번에 복학한 21학번 컴공과 권은빈입니다
 * * *
 This is an H1
