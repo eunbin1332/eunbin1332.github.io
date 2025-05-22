@@ -11,7 +11,7 @@
 [**homework3-4**](https://eunbin1332.github.io/homework3-4.jpg)<br>
 [**homework3-5**](https://eunbin1332.github.io/homework3-5.jpg)<br>
 
-군 재대후 이번에 복학한 21학번 컴공과 권은빈입니다
+20211332 권은빈
 * * *
 This is an H1
 -----------------
