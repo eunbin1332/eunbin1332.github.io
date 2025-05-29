@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Drag Rectangle Finish on Mouse Up</title>
+    <script type="text/javascript">
+        let canvas, context;
+        let startX = null, startY = null;
+        let endX = null, endY = null;
+        let mouseIsDown = false;
+
+        function init() {
+            canvas = document.getElementById("myCanvas");
+            context = canvas.getContext("2d");
+            canvas.addEventListener("mousedown", mouseDown, false);
+            canvas.addEventListener("mousemove", mouseMove, false);
+            canvas.addEventListener("mouseup", mouseUp, false);
+        }
+
+        function getMousePos(e) {
+            const rect = canvas.getBoundingClientRect();
+            return {
+                x: e.clientX - rect.left,
+                y: e.clientY - rect.top
+            };
+        }
+
+        function mouseDown(e) {
+            mouseIsDown = true;
+            const pos = getMousePos(e);
+            startX = pos.x;
+            startY = pos.y;
+            endX = null;
+            endY = null;
+            drawCanvas(pos.x, pos.y);
+        }
+
+        function mouseMove(e) {
+            const pos = getMousePos(e);
+            // 드래그 중일 때만 사각형 업데이트
+            if (mouseIsDown) {
+                endX = pos.x;
+                endY = pos.y;
+            }
+            drawCanvas(pos.x, pos.y);
+        }
+
+        function mouseUp(e) {
+            mouseIsDown = false;
+            const pos = getMousePos(e);
+            endX = pos.x;
+            endY = pos.y;
+            drawCanvas(pos.x, pos.y);
+        }
+
+        function drawCanvas(mouseX, mouseY) {
+            context.clearRect(0, 0, canvas.width, canvas.height);
+
+            // 드래그 중이거나 드래그가 끝난 후 고정된 사각형이 있을 때만 그리기
+            if (startX !== null && startY !== null && endX !== null && endY !== null) {
+                const rectX = Math.min(startX, endX);
+                const rectY = Math.min(startY, endY);
+                const rectW = Math.abs(endX - startX);
+                const rectH = Math.abs(endY - startY);
+
+                context.strokeStyle = "blue";
+                context.lineWidth = 2;
+                context.strokeRect(rectX, rectY, rectW, rectH);
+            }
+
+            // 중앙 텍스트 출력
+            const status = mouseIsDown ? "down" : "up";
+            const centerText = `(${startX ?? '-'}, ${startY ?? '-'}) - (${endX ?? mouseX}, ${endY ?? mouseY}) ${status}`;
+            context.font = "16pt Helvetica";
+            context.textAlign = "center";
+            context.textBaseline = "middle";
+            context.fillStyle = "black";
+            context.fillText(centerText, canvas.width / 2, canvas.height / 2);
+
+            // 마우스 포인터 빨간 사각형 표시
+            if (mouseX !== null && mouseY !== null) {
+                drawPointerBox(mouseX, mouseY);
+            }
+        }
+
+        function drawPointerBox(x, y) {
+            const size = 10;
+            context.fillStyle = "red";
+            context.fillRect(x - size / 2, y - size / 2, size, size);
+        }
+    </script>
+</head>
+<body onload="init()">
+    <canvas id="myCanvas" width="500" height="500" style="border:1px solid black;"></canvas>
+</body>
+</html>
